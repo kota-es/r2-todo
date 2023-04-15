@@ -1,0 +1,10 @@
+version: "3"
+services:
+  backend:
+    build: ./backend
+    container_name: "backend"
+    ports:
+      - "8080:8080"
+    tty: true
+    volumes:
+      - ./backend:/usr/src/app
