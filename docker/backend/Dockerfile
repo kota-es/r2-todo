@@ -3,7 +3,7 @@ FROM rust:1.68.2
 
 WORKDIR /usr/src/app
 
-COPY ./ ./
+COPY ./backend .
 
 RUN cargo install cargo-watch
 
